@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trevor's Cafe offers freshly brewed coffee, homemade pastries, and a cozy ambiance. Visit us today!">
     <title>Trevor's Cafe - Home</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-    <header>
+    <header >
         <h1>Welcome to Trevor's Cafe</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -25,12 +26,17 @@
     </header>
     <main>
         <!-- Welcome Section -->
-        <section id="welcome">
-            <h2>Welcome to Trevor's Cafe</h2>
-            <p>Discover the finest coffee and pastries in town!</p>
-            <img src="assets/images/coffee.jpg" alt="A steaming cup of coffee">
-
+        <section id="hero">
+            <img src="../assets/images/hero.jpg" alt="A welcoming coffee shop ambiance">
+            <div class="hero-text">
+                <header>
+                    <h1>Welcome to Trevor's Cafe</h1>
+                    <p>Freshly brewed coffee & homemade pastries, crafted with love.</p>
+                </header>
+                <a href="menu.html" class="btn" role="button">View Our Menu</a>
+            </div>
         </section>
+        
 
         <!-- Specials Section -->
         <section id="specials">
