@@ -14,24 +14,33 @@ header {
     text-align: center;
 }
 
+/* Horizontal Navigation Bar */
 nav ul {
     list-style: none;
+    margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    background-color: #292b34; /* dark background */
 }
 
-nav a {
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    transition: background 0.2s;
 }
 
-nav a:hover {
-    color: #ffe6e6; /* Light hover effect */
-    text-decoration: underline;
-    transition: color 0.3s ease-in-out; /* Smooth hover effect */
+nav ul li a:hover,
+nav ul li a[aria-current="page"] {
+    background-color: #00c389; /* highlight color for active/hover */
+    color: #fff;
+    font-weight: bold;
 }
 
 main {
@@ -335,4 +344,67 @@ ul li img {
 a:focus, button:focus {
     outline: 2px solid #ff6f61;
     outline-offset: 2px;
+}
+
+/* Menu Grid Section */
+#menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background: #181818;
+}
+
+.menu-card {
+    background: #222;
+    color: #fff;
+    border-radius: 12px;
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.menu-title.discovery { color: #6b8e4e; }
+.menu-title.revival { color: #1e355e; }
+/* Add more color classes as needed */
+
+.menu-subtitle {
+    font-size: 1.2rem;
+    color: #cfcfcf;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.menu-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.menu-details {
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+.menu-price {
+    font-size: 1.1rem;
+    color: #ffd700;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
 }
