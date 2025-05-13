@@ -46,6 +46,24 @@ footer {
     margin-top: 2rem;
 }
 
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 1rem 0 0 0;
+}
+
+footer ul li a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
 /* Hero Section */
 #hero {
     width: 100%;
@@ -246,10 +264,11 @@ blockquote cite {
 
 /* Menu Images */
 ul li img {
-    width: 60px; /* Set consistent width for menu item images */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 1rem; /* Space between image and text */
-    border-radius: 5px; /* Rounded edges for style */
+    max-width: 60px;
+    width: 100%;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 5px;
 }
 
 /* Mission Section (About Page) */
@@ -300,4 +319,20 @@ ul li img {
 #fun-facts li {
     margin: 0.5rem 0;
     font-size: 1.2rem; /* Slightly larger font for emphasis */
+}
+
+/* Map Section */
+#map iframe {
+    border: 0;
+}
+
+#map iframe[title="Map showing Trevor's Cafe location"] {
+    /* Additional styles for the specific iframe */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+a:focus, button:focus {
+    outline: 2px solid #ff6f61;
+    outline-offset: 2px;
 }
