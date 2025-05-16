@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore Trevor's Cafe menu featuring freshly brewed coffee, delicious pastries, and hearty snacks.">
     <title>Trevor's Cafe - Menu</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
@@ -24,117 +24,93 @@
         </nav>
     </header>
     <main>
-        <!-- Offerings Section -->
-        <section id="offerings">
-            <h2>Our Offerings</h2>
-            <img src="assets/images/pastries.jpg" alt="Delicious pastries">
-            <p>Enjoy a variety of fresh pastries and coffee!</p>
-        </section>
-        
-        <!-- Coffee Section -->
-        <section id="coffee">
-            <h2>Our Coffee</h2>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="assets/images/latte.jpg" alt="A cup of latte">
-                        <figcaption>
-                            <strong>Latte</strong> - £3.50<br>
-                            A smooth blend of espresso and steamed milk.
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="assets/images/cappuccino.jpg" alt="A cup of cappuccino">
-                        <figcaption>
-                            <strong>Cappuccino</strong> - £3.00<br>
-                            A classic espresso-based drink topped with frothy milk.
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="assets/images/espresso.jpg" alt="Espresso shot">
-                        <figcaption>
-                            <strong>Espresso Shot</strong> - £2.50<br>
-                            A bold and rich single shot of espresso.
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Pastries Section -->
-        <section id="pastries">
-            <h2>Our Pastries</h2>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="assets/images/croissant.jpg" alt="Croissant">
-                        <figcaption>
-                            <strong>Croissant</strong> - £2.00<br>
-                            Buttery and flaky, baked to perfection.
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="assets/images/muffin.jpg" alt="Chocolate Muffin">
-                        <figcaption>
-                            <strong>Chocolate Muffin</strong> - £2.50<br>
-                            Rich and moist, filled with chunks of chocolate.
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="assets/images/cinnamon-roll.jpg" alt="Cinnamon Roll">
-                        <figcaption>
-                            <strong>Cinnamon Roll</strong> - £3.00<br>
-                            Sweet and spicy, topped with cream cheese icing.
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Snacks Section -->
-        <section id="snacks">
-            <h2>Our Snacks</h2>
-            <ul>
-                <li>
-                    <figure>
-                        <img src="assets/images/granola-bar.jpg" alt="Granola Bar">
-                        <figcaption>
-                            <strong>Granola Bar</strong> - £1.50<br>
-                            A healthy and hearty snack to keep you going.
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="assets/images/fruit-salad.jpg" alt="Fruit Salad">
-                        <figcaption>
-                            <strong>Fruit Salad</strong> - £2.50<br>
-                            A refreshing mix of seasonal fruits.
-                        </figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="assets/images/cheese-platter.jpg" alt="Cheese Platter">
-                        <figcaption>
-                            <strong>Cheese Platter</strong> - £4.00<br>
-                            A selection of gourmet cheeses served with crackers.
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </section>
-
         <!-- Menu Grid Section -->
         <section id="menu-grid">
+            <!-- Coffee -->
+            <div class="menu-card">
+                <h2 class="menu-title">LATTE</h2>
+                <p class="menu-subtitle">Espresso & Steamed Milk</p>
+                <img src="assets/images/latte.jpg" alt="A cup of latte">
+                <div class="menu-details">
+                    <p>A smooth blend of espresso and steamed milk.</p>
+                    <p class="menu-price">£3.50</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <h2 class="menu-title">CAPPUCCINO</h2>
+                <p class="menu-subtitle">Espresso & Frothy Milk</p>
+                <img src="assets/images/cappuccino.jpg" alt="A cup of cappuccino">
+                <div class="menu-details">
+                    <p>A classic espresso-based drink topped with frothy milk.</p>
+                    <p class="menu-price">£3.00</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <h2 class="menu-title">ESPRESSO</h2>
+                <p class="menu-subtitle">Single Shot</p>
+                <img src="assets/images/espresso.jpg" alt="Espresso shot">
+                <div class="menu-details">
+                    <p>A bold and rich single shot of espresso.</p>
+                    <p class="menu-price">£2.50</p>
+                </div>
+            </div>
+            <!-- Pastries -->
+            <div class="menu-card">
+                <h2 class="menu-title">CROISSANT</h2>
+                <p class="menu-subtitle">Buttery & Flaky</p>
+                <img src="assets/images/croissant.jpg" alt="Croissant">
+                <div class="menu-details">
+                    <p>Buttery and flaky, baked to perfection.</p>
+                    <p class="menu-price">£2.00</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <h2 class="menu-title">CHOCOLATE MUFFIN</h2>
+                <p class="menu-subtitle">Rich & Moist</p>
+                <img src="assets/images/muffin.jpg" alt="Chocolate Muffin">
+                <div class="menu-details">
+                    <p>Rich and moist, filled with chunks of chocolate.</p>
+                    <p class="menu-price">£2.50</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <h2 class="menu-title">CINNAMON ROLL</h2>
+                <p class="menu-subtitle">Sweet & Spicy</p>
+                <img src="assets/images/cinnamon-roll.jpg" alt="Cinnamon Roll">
+                <div class="menu-details">
+                    <p>Sweet and spicy, topped with cream cheese icing.</p>
+                    <p class="menu-price">£3.00</p>
+                </div>
+            </div>
+            <!-- Snacks -->
+            <div class="menu-card">
+                <h2 class="menu-title">GRANOLA BAR</h2>
+                <p class="menu-subtitle">Healthy Snack</p>
+                <img src="assets/images/granola-bar.jpg" alt="Granola Bar">
+                <div class="menu-details">
+                    <p>A healthy and hearty snack to keep you going.</p>
+                    <p class="menu-price">£1.50</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <h2 class="menu-title">FRUIT SALAD</h2>
+                <p class="menu-subtitle">Seasonal Fruits</p>
+                <img src="assets/images/fruit-salad.jpg" alt="Fruit Salad">
+                <div class="menu-details">
+                    <p>A refreshing mix of seasonal fruits.</p>
+                    <p class="menu-price">£2.50</p>
+                </div>
+            </div>
+            <div class="menu-card">
+                <h2 class="menu-title">CHEESE PLATTER</h2>
+                <p class="menu-subtitle">Gourmet Selection</p>
+                <img src="assets/images/cheese-platter.jpg" alt="Cheese Platter">
+                <div class="menu-details">
+                    <p>A selection of gourmet cheeses served with crackers.</p>
+                    <p class="menu-price">£4.00</p>
+                </div>
+            </div>
+            <!-- Specialty Blends (example) -->
             <div class="menu-card">
                 <h2 class="menu-title discovery">DISCOVERY</h2>
                 <p class="menu-subtitle">Single Origin</p>
@@ -157,7 +133,7 @@
                     <p class="menu-price">From £9.25</p>
                 </div>
             </div>
-            <!-- Repeat for other products -->
+            <!-- Add more specialty blends as needed -->
         </section>
 
         <!-- Call-to-Action Section -->
